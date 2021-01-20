@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Aclonica|Bangers|Josefin+Sans|Libre+Franklin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Josefin+Sans|Libre+Franklin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Franklin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/Bootstrap/css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css"
+        media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <title>Quote Generator</title>
+</head>
+
+<body>
+    <div class="container justify-content-center">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <h2>Enlightening <br> QUOTES</h2>
+                <h3 style="font-family: 'Aclonica', sans-serif; font-size: 28px">Creative quotes from interesting & enlightening thinkers</h3>
+            </div>
+        </div>
+    </div>
+    <!--2 Categories... Artists & Scientists-->
+    <div class="container justify-content-center">
+        <div class="row">
+            <button class="btn col-xs-12 col-sm-12 col-md-5" id="artistsBtn" style="font-family: 'Abril Fatface', cursive;" value="artist">Artists</button>
+            <button class="btn col-xs-12 col-sm-12 offset-md-2 col-md-5" id="scientistsBtn" style="font-family: 'Abril Fatface', cursive;" value="scientist">Scientists</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <label class="offset-xs-3 col-xs-6 offset-sm-3 col-sm-6"
+            style="margin-top: 10px; padding: 7px; color: aliceblue; text-align: center; font-family: 'Libre Franklin', sans-serif; font-size: 18px">Enter the
+            number of quotes you would like to have:</label>
+        </div>
+        <!--Number of Quotes-->
+        <div class="row">
+            <select id="inputNumber" class="offset-xs-3 col-xs-6 offset-sm-3 col-sm-6" style="padding: 7px">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <!--Get Quote Button-->
+        <div class="row">
+            <div class="offset-xs-4 col-xs-6 offset-sm-4 col-sm-6 offset-md-5 col-md-3 justify-content-center" style="margin-top: 20px; margin-bottom: 30px;">
+                <button id="getQuoteBtn" class="btn button" style="font-family: 'Libre Franklin', sans-serif;">Get Quote</button>
+            </div>
+        </div>
+    </div>
+    <!--Modal--> 
+    <div class="container-fluid">
+        <div id="quoteModal" class="modal">
+            <div class="modal-content" id="modal-content">
+                <span class="closeBtn">&times;</span>
+                <br>
+                <blockquote class="blockquote">
+                    <p id="quoteText"
+                        style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 32px;"></p>
+                </blockquote>
+                <a title="Twitt this quote" href="https://twitter.com" target="blank" style="color: #1da1f2; margin-left: 20px; width: 100px; height: 100px;"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="quoteGenerator.js"></script>
+</body>
+
+</html>

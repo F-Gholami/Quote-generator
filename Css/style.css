@@ -1,0 +1,112 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0%;
+    background-image: linear-gradient(to bottom right, #050200, #000d1e, #00275d, #1b65a6, #1b65a6, #00275d, #000d1e, #050200);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3{
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 50px;
+}
+
+#artistsBtn{
+    color: aliceblue;
+    width: 70px;
+    height: 400px;
+    background-color: #d44206;
+    font-size: 50px;
+}
+#scientistsBtn{
+    color: aliceblue;
+    widows: 70px;
+    height: 400px;
+    background-color: #f0a818;
+    font-size: 50px;
+}
+
+li{
+    cursor: pointer;
+    color: aliceblue
+}
+
+input{
+    padding: 5px 10px;
+    border: #000;
+}
+
+.offset-xs-3.col-xs-6.offset-sm-3.col-sm-6.focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px black;
+}
+
+#getQuoteBtn{
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    background-color: #000d1e;
+}
+#getQuoteBtn:hover{
+    background-color: #1b65a6;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    color: aliceblue;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    margin: 20% auto;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5), 0 7px 20px rgba(0, 0, 0, 0.4); 
+    /* for animation we give it a name here and then add some keyframes */
+    animation-name: modalopen;
+    animation-duration: 2s;
+}
+
+@keyframes modalopen{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+.modal-artist{
+    background-color: #d44206;
+}
+.modal-scientist{
+    background-color: #f0a818;
+}
+
+.closeBtn{
+    color: #fff;
+    float: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
